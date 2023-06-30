@@ -1,0 +1,21 @@
+from django.shortcuts import render
+from rest_framework import generics, status
+from rest_framework.response import Response
+from django.core import serializers
+
+
+
+#Method to register a new user
+    
+
+
+#Method to edit patient details
+    
+
+
+#Method to list all the patients
+    
+
+
+#Method to view single patient details
+   

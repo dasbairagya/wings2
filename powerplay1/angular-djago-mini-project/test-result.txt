@@ -1,0 +1,671 @@
+zone.js/dist/zone-testing.js:569:1)
+            at <Jasmine>
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 111 of 134 (104 FAILED) (0 secs / 2.275 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent HTML file Existing Holiday-> Add button should not be displayed, save and remove button should be displayed FAILED
+        TypeError: Cannot read property 'setValue' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:327:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent HTML file Add button to be disabled FAILED
+        TypeError: Cannot read property 'setValue' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:343:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+            at <Jasmine>
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 112 of 134 (105 FAILED) (0 secs / 2.282 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent HTML file Add button to be disabled FAILED
+        TypeError: Cannot read property 'setValue' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:343:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent HTML file remove button to be enabled FAILED
+        TypeError: Cannot read property 'setValue' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:451:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+            at <Jasmine>
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 113 of 134 (106 FAILED) (0 secs / 2.291 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent HTML file remove button to be enabled FAILED
+        TypeError: Cannot read property 'setValue' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:451:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent HTML file Click=>Add button should call addHoliday() FAILED
+        TypeError: Cannot read property 'setValue' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:380:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+            at <Jasmine>
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 114 of 134 (107 FAILED) (0 secs / 2.301 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent HTML file Click=>Add button should call addHoliday() FAILED
+        TypeError: Cannot read property 'setValue' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:380:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent HTML file Test2 display error message for holidayName text field FAILED
+        TypeError: Cannot read property 'setValue' of undefined
+            at <Jasmine>
+            at http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:503:31
+            at <Jasmine>
+            at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
+            at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
+            at __awaiter (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:499:78)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 115 of 134 (108 FAILED) (0 secs / 2.312 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent HTML file Test2 display error message for holidayName text field FAILED
+        TypeError: Cannot read property 'setValue' of undefined
+            at <Jasmine>
+            at http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:503:31
+            at <Jasmine>
+            at http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:73:1
+            at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:872:1)
+            at __awaiter (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:69:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:499:78)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file updateHoliday should use HolidayService function updateHoliday FAILED
+        TypeError: Cannot read property 'get' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:216:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+            at <Jasmine>
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 116 of 134 (109 FAILED) (0 secs / 2.32 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file updateHoliday should use HolidayService function updateHoliday FAILED
+        TypeError: Cannot read property 'get' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:216:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign response data to holidayObj FAILED
+        Error: Expected object to have properties
+            date: '02/06/2020'
+            id: 134
+            city: 'hhjv'
+            holidayName: 'TD'
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:109:38)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 117 of 134 (110 FAILED) (0 secs / 2.332 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign response data to holidayObj FAILED
+        Error: Expected object to have properties
+            date: '02/06/2020'
+            id: 134
+            city: 'hhjv'
+            holidayName: 'TD'
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:109:38)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file removeHoliday should use HolidayService function removeHoliday FAILED
+        Error: Expected spy HolidayService.removeHoliday to have been called with:
+          [ 134 ]
+        but it was never called.
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:257:47)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+        Error: Expected spy HolidayService.removeHoliday to have been called with:
+          [ 132 ]
+        but it was never called.
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:261:47)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 118 of 134 (111 FAILED) (0 secs / 2.341 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file removeHoliday should use HolidayService function removeHoliday FAILED
+        Error: Expected spy HolidayService.removeHoliday to have been called with:
+          [ 134 ]
+        but it was never called.
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:257:47)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+        Error: Expected spy HolidayService.removeHoliday to have been called with:
+          [ 132 ]
+        but it was never called.
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:261:47)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file addHoliday should use HolidayService function addHoliday FAILED
+        TypeError: Cannot read property 'get' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:186:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+            at <Jasmine>
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 120 of 134 (112 FAILED) (0 secs / 2.358 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file addHoliday should use HolidayService function addHoliday FAILED
+        TypeError: Cannot read property 'get' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:186:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:124:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:554:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:569:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign the holidayName to holidayEditor form FAILED
+        Failed: Cannot read property 'get' of undefined
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:139:40)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+            at Subscriber._next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+            at Subscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)
+            at Observable._subscribe (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/util/subscribeToArray.js:3:1)
+            at Observable._trySubscribe (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Observable.js:42:1)
+            at Observable.subscribe (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Observable.js:28:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:138:90)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 121 of 134 (113 FAILED) (0 secs / 2.368 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file T2 getSelectedHolidayInfo should assign the holidayName to holidayEditor form FAILED
+        Failed: Cannot read property 'get' of undefined
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:139:40)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+            at Subscriber._next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+            at Subscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)
+            at Observable._subscribe (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/util/subscribeToArray.js:3:1)
+            at Observable._trySubscribe (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Observable.js:42:1)
+            at Observable.subscribe (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Observable.js:28:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:138:90)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file updateHoliday() should call monthComponentNotify after addHoliday response  FAILED
+        Error: Expected spy HolidayService.monthComponentNotify to have been called.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:248:56)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 123 of 134 (114 FAILED) (0 secs / 2.386 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file updateHoliday() should call monthComponentNotify after addHoliday response  FAILED
+        Error: Expected spy HolidayService.monthComponentNotify to have been called.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:248:56)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file Test2 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate  FAILED
+        Error: Expected spy getSelectedHolidayInfo to have been called.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:297:21)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+        Error: Expected '20/02/2019' to be '05/06/2020'.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:298:42)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 124 of 134 (115 FAILED) (0 secs / 2.394 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file Test2 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate  FAILED
+        Error: Expected spy getSelectedHolidayInfo to have been called.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:297:21)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+        Error: Expected '20/02/2019' to be '05/06/2020'.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:298:42)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file updateHoliday() should call getSelectedHolidayInfo  FAILED
+        Error: Expected spy getSelectedHolidayInfo to have been called.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:239:20)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 125 of 134 (116 FAILED) (0 secs / 2.408 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file updateHoliday() should call getSelectedHolidayInfo  FAILED
+        Error: Expected spy getSelectedHolidayInfo to have been called.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:239:20)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be true FAILED
+        Error: Expected false to be truthy.
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:162:36)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+        Error: Expected false to be truthy.
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:167:36)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 126 of 134 (117 FAILED) (0 secs / 2.416 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file getSelectedHolidayInfo() -> editorFlag should be true FAILED
+        Error: Expected false to be truthy.
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:162:36)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+        Error: Expected false to be truthy.
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:167:36)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file T3 getSelectedHolidayInfo should reset form if response is empty FAILED
+        Failed: Cannot read property 'setValue' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:144:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at AsyncTestZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:763:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:302:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.runGuarded (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:134:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:885:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:823:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 127 of 134 (118 FAILED) (0 secs / 2.431 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file T3 getSelectedHolidayInfo should reset form if response is empty FAILED
+        Failed: Cannot read property 'setValue' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:144:31)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at AsyncTestZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:763:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:302:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.runGuarded (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:134:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:885:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:823:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file getSelectedHolidayInfo should call getSelectedHolidayInfo() in HolidayService FAILED
+        Error: Expected spy HolidayService.getSelectedHolidayInfo to have been called with:
+          [ '02/06/2020', 'hhjv' ]
+        but it was never called.
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:81:56)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+        Error: Expected spy HolidayService.getSelectedHolidayInfo to have been called with:
+          [ '05/06/2020', 'hhjsddv' ]
+        but it was never called.
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:86:56)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 128 of 134 (119 FAILED) (0 secs / 2.439 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file getSelectedHolidayInfo should call getSelectedHolidayInfo() in HolidayService FAILED
+        Error: Expected spy HolidayService.getSelectedHolidayInfo to have been called with:
+          [ '02/06/2020', 'hhjv' ]
+        but it was never called.
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:81:56)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+        Error: Expected spy HolidayService.getSelectedHolidayInfo to have been called with:
+          [ '05/06/2020', 'hhjsddv' ]
+        but it was never called.
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:86:56)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file removeHoliday() should call monthComponentNotify, holidayObj to be {} and reset holidayEditor form after removing Holiday FAILED
+        Failed: Cannot read property 'controls' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:267:33)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at AsyncTestZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:763:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:302:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.runGuarded (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:134:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:885:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:823:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:305:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 129 of 134 (120 FAILED) (0 secs / 2.45 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file removeHoliday() should call monthComponentNotify, holidayObj to be {} and reset holidayEditor form after removing Holiday FAILED
+        Failed: Cannot read property 'controls' of undefined
+            at <Jasmine>
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:267:33)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+            at AsyncTestZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:763:1)
+            at ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:302:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+            at Zone.runGuarded (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:134:1)
+            at runInTestZone (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:885:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:823:1)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file Test1 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate  FAILED
+        Error: Expected spy getSelectedHolidayInfo to have been called.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:283:21)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+        Error: Expected '20/02/2019' to be '02/06/2020'.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:284:42)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 130 of 134 (121 FAILED) (0 secs / 2.459 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file Test1 userDate$ => should call getSelectedHolidayInfo when userDate updates, and assign updated date to selectedDate  FAILED
+        Error: Expected spy getSelectedHolidayInfo to have been called.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:283:21)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+        Error: Expected '20/02/2019' to be '02/06/2020'.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:284:42)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file addHoliday() should call monthComponentNotify after addHoliday response  FAILED
+        Error: Expected spy HolidayService.monthComponentNotify to have been called.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:210:56)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 131 of 134 (122 FAILED) (0 secs / 2.468 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file addHoliday() should call monthComponentNotify after addHoliday response  FAILED
+        Error: Expected spy HolidayService.monthComponentNotify to have been called.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:210:56)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file addHoliday() should call getSelectedHolidayInfo  FAILED
+        Error: Expected spy getSelectedHolidayInfo to have been called.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:203:20)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 132 of 134 (123 FAILED) (0 secs / 2.481 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file addHoliday() should call getSelectedHolidayInfo  FAILED
+        Error: Expected spy getSelectedHolidayInfo to have been called.
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:203:20)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign the holidayName to holidayEditor form FAILED
+        Failed: Cannot read property 'get' of undefined
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:129:40)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+            at Subscriber._next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+            at Subscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)
+            at Observable._subscribe (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/util/subscribeToArray.js:3:1)
+            at Observable._trySubscribe (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Observable.js:42:1)
+            at Observable.subscribe (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Observable.js:28:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:128:90)
+            at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:365:1)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 133 of 134 (124 FAILED) (0 secs / 2.493 secs)
+HeadlessChrome 78.0.3904 (Linux 0.0.0) HolidayEditorComponent TS file T1 getSelectedHolidayInfo should assign the holidayName to holidayEditor form FAILED
+        Failed: Cannot read property 'get' of undefined
+            at <Jasmine>
+            at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:129:40)
+            at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+            at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+            at Subscriber._next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+            at Subscriber.next (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)
+            at Observable._subscribe (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/util/subscribeToArray.js:3:1)
+            at Observable._trySubscribe (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Observable.js:42:1)
+            at Observable.subscribe (http://localhost:9876/_karma_webpack_/node_modules/rxjs/_esm2015/internal/Observable.js:28:1)
+            at UserContext.<anonymous> (http://localhost:9876/_karma_webpack_/src/app/dashboard/holiday-editor/holiday-editor.component.spec.ts:128:90)
+HeadlessChrome 78.0.3904 (Linux 0.0.0): Executed 134 of 134 (124 FAILED) (3.014 secs / 2.501 secs)
+TOTAL: 124 FAILED, 10 SUCCESS
+TOTAL: 124 FAILED, 10 SUCCESS
+npm ERR! Test failed.  See above for more details.
+No changes detected
+Operations to perform:
+  Synchronize unmigrated apps: messages, rest_framework, staticfiles
+  Apply all migrations: admin, auth, contenttypes, sessions
+Synchronizing apps without migrations:
+  Creating tables...
+    Running deferred SQL...
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying sessions.0001_initial... OK
+Using existing test database for alias 'default'...
+System check identified no issues (0 silenced).
+
+Running tests...
+----------------------------------------------------------------------
+name 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+name 'Admin' is not defined Model Has Some Problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+name 'Holiday' is not defined Model Has Some Problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+Fname 'Holiday' is not defined Model has some problem
+F
+======================================================================
+FAIL [0.007s]: test_admin_login_view (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 94, in test_admin_login_view
+    self.assertEqual(response.status_code, 200)
+AssertionError: 404 != 200
+
+======================================================================
+FAIL [0.001s]: test_admin_text_content (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 56, in test_admin_text_content
+    admin=Admin.objects.get(id=1)
+NameError: name 'Admin' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 63, in test_admin_text_content
+    assert False
+AssertionError
+
+======================================================================
+FAIL [0.002s]: test_all_city_names (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 149, in test_all_city_names
+    self.assertEqual(response.status_code, 200)
+AssertionError: 404 != 200
+
+======================================================================
+FAIL [0.002s]: test_create_page (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 33, in test_create_page
+    self.assertEquals(response.status_code,405)
+AssertionError: 404 != 405
+
+======================================================================
+FAIL [0.002s]: test_del_holiday_name (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 155, in test_del_holiday_name
+    self.assertEqual(response.status_code, 204)
+AssertionError: 404 != 204
+
+======================================================================
+FAIL [0.002s]: test_holiday_text_content (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 43, in test_holiday_text_content
+    holiday = Holiday.objects.get(id=1)
+NameError: name 'Holiday' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 52, in test_holiday_text_content
+    assert False
+AssertionError
+
+======================================================================
+FAIL [0.002s]: test_holidays_page (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 27, in test_holidays_page
+    self.assertEquals(response.status_code, 200)
+AssertionError: 404 != 200
+
+======================================================================
+FAIL [0.003s]: test_update (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/.local/lib/python3.5/site-packages/django/test/testcases.py", line 809, in assertJSONEqual
+    data = json.loads(raw)
+  File "/usr/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 162, in test_update
+    self.assertJSONEqual(response_content, {"status":1})
+  File "/home/user/.local/lib/python3.5/site-packages/django/test/testcases.py", line 811, in assertJSONEqual
+    self.fail("First argument is not valid JSON: %r" % raw)
+AssertionError: First argument is not valid JSON: '<h1>Not Found</h1><p>The requested resource was not found on this server.</p>'
+
+======================================================================
+FAIL [0.003s]: test_upload_invalid (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 134, in test_upload_invalid
+    self.assertEqual(response.status_code, 200)
+AssertionError: 404 != 200
+
+======================================================================
+FAIL [0.003s]: test_upload_invalid_with_cities (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 142, in test_upload_invalid_with_cities
+    self.assertEqual(response.status_code, 200)
+AssertionError: 404 != 200
+
+======================================================================
+FAIL [0.002s]: test_valid (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 126, in test_valid
+    self.assertEqual(response.status_code, 200)
+AssertionError: 404 != 200
+
+======================================================================
+FAIL [0.002s]: test_view_create (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 111, in test_view_create
+    self.assertEqual(response.status_code, 200)
+AssertionError: 404 != 200
+
+======================================================================
+FAIL [0.002s]: test_view_create_with_past_date (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 119, in test_view_create_with_past_date
+    self.assertEqual(response.status_code, 400)
+AssertionError: 404 != 400
+
+======================================================================
+FAIL [0.003s]: test_view_daily (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 104, in test_view_daily
+    self.assertEqual(response.status_code, 200)
+AssertionError: 404 != 200
+
+======================================================================
+FAIL [0.002s]: test_view_list_all_holidays (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 67, in test_view_list_all_holidays
+    self.assertEqual(response.status_code, 200)
+AssertionError: 404 != 200
+
+======================================================================
+FAIL [0.002s]: test_view_monthly (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 80, in test_view_monthly
+    self.assertEqual(response.status_code, 200)
+AssertionError: 404 != 200
+
+======================================================================
+FAIL [0.002s]: test_view_monthly_with_no_result (holiday.tests.PageHitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/projects/challenge/django/holiday/tests.py", line 87, in test_view_monthly_with_no_result
+    self.assertEqual(response.status_code, 200)
+AssertionError: 404 != 200
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.049s
+
+FAILED (failures=17)
+
+Generating XML reports...
+Preserving test database for alias 'default'...
+FS_SCORE:6%
+user@workspace84thllgrm2sd47ma:/projects/challenge$ 

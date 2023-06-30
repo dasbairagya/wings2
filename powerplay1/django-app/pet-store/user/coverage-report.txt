@@ -1,0 +1,60 @@
+Command: cd /projects/challenge && rm -rf coverage.xml; python3 manage.py makemigrations && python3 manage.py migrate --run-syncdb && python3 manage.py test --keepdb && bash .score.sh
+No changes detected
+
+Operations to perform:
+
+  Synchronize unmigrated apps: django_nose, messages, rest_framework, staticfiles
+
+  Apply all migrations: admin, auth, authtoken, contenttypes, puppy, sessions, user
+
+Synchronizing apps without migrations:
+
+  Creating tables...
+
+    Running deferred SQL...
+
+Running migrations:
+
+  No migrations to apply.
+
+Using existing test database for alias 'default'...
+
+.....
+
+Coverage.py warning: Module room was never imported. (module-not-imported)
+
+Name                              Stmts   Miss  Cover
+
+-----------------------------------------------------
+
+user/__init__.py                      0      0   100%
+
+user/admin.py                        10     10     0%
+
+user/migrations/0001_initial.py       5      0   100%
+
+user/migrations/__init__.py           0      0   100%
+
+user/models.py                       24     13    46%
+
+user/serializers.py                  29      0   100%
+
+user/urls.py                          4      0   100%
+
+user/views.py                        15      0   100%
+
+-----------------------------------------------------
+
+TOTAL                                87     23    74%
+
+----------------------------------------------------------------------
+
+Ran 5 tests in 0.991s
+
+OK
+
+Preserving test database for alias 'default'...
+
+nosetests --with-coverage --cover-package=room,user --cover-xml --verbosity=1
+
+FS_SCORE:73%

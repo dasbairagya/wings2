@@ -1,0 +1,223 @@
+No changes detected
+
+Operations to perform:
+
+  Synchronize unmigrated apps: allauth, corsheaders, messages, registration, rest_auth, rest_framework, staticfiles
+
+  Apply all migrations: account, admin, auth, authtoken, contenttypes, register, sessions, sites
+
+Synchronizing apps without migrations:
+
+  Creating tables...
+
+    Running deferred SQL...
+
+Running migrations:
+
+  No migrations to apply.
+
+Using existing test database for alias 'default'...
+
+Running tests...
+
+----------------------------------------------------------------------
+
+EFFFEE
+
+======================================================================
+
+ERROR [0.043s]: test_addAccount (register.tests.RegisterView)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "/projects/challenge/register/tests.py", line 25, in test_addAccount
+
+    'user_mobile':9874563210})
+
+  File "/home/user/.local/lib/python3.5/site-packages/django/test/client.py", line 543, in post
+
+    response = super().post(path, data=data, content_type=content_type, secure=secure, **extra)
+
+  File "/home/user/.local/lib/python3.5/site-packages/django/test/client.py", line 357, in post
+
+    secure=secure, **extra)
+
+  File "/home/user/.local/lib/python3.5/site-packages/django/test/client.py", line 422, in generic
+
+    return self.request(**r)
+
+  File "/home/user/.local/lib/python3.5/site-packages/django/test/client.py", line 503, in request
+
+    raise exc_value
+
+  File "/home/user/.local/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+
+    response = get_response(request)
+
+  File "/home/user/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+
+    response = self.process_exception_by_middleware(e, request)
+
+  File "/home/user/.local/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+
+  File "/home/user/.local/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+
+    return view_func(*args, **kwargs)
+
+  File "/home/user/.local/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+
+    return self.dispatch(request, *args, **kwargs)
+
+  File "/home/user/.local/lib/python3.5/site-packages/rest_framework/views.py", line 505, in dispatch
+
+    response = self.handle_exception(exc)
+
+  File "/home/user/.local/lib/python3.5/site-packages/rest_framework/views.py", line 465, in handle_exception
+
+    self.raise_uncaught_exception(exc)
+
+  File "/home/user/.local/lib/python3.5/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+
+    raise exc
+
+  File "/home/user/.local/lib/python3.5/site-packages/rest_framework/views.py", line 502, in dispatch
+
+    response = handler(request, *args, **kwargs)
+
+  File "/projects/challenge/register/views.py", line 19, in post
+
+    serializer.save()
+
+  File "/home/user/.local/lib/python3.5/site-packages/rest_framework/serializers.py", line 213, in save
+
+    self.instance = self.create(validated_data)
+
+  File "/projects/challenge/register/serializers.py", line 11, in create
+
+    user = RegisterUser.objects.create_user(**validated_data)
+
+  File "/projects/challenge/register/models.py", line 16, in create_user
+
+    user = self.model(user_email=user_email, **extra_fields)
+
+  File "/home/user/.local/lib/python3.5/site-packages/django/db/models/base.py", line 496, in __init__
+
+    _setattr(self, prop, kwargs[prop])
+
+  File "/home/user/.local/lib/python3.5/site-packages/django/db/models/fields/related_descriptors.py", line 538, in __set__
+
+    % self._get_set_deprecation_msg_params(),
+
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use groups.set() instead.
+
+======================================================================
+
+ERROR [0.000s]: appointments.tests (unittest.loader._FailedTest)
+
+----------------------------------------------------------------------
+
+ImportError: Failed to import test module: appointments.tests
+
+Traceback (most recent call last):
+
+  File "/usr/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
+
+    module = self._get_module_from_name(name)
+
+  File "/usr/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
+
+    __import__(name)
+
+  File "/projects/challenge/appointments/tests.py", line 4, in <module>
+
+    from .views import RegisterCreateView, EditUserView, ListUserView, DeleteUserView, SingleUserView
+
+ImportError: cannot import name 'RegisterCreateView'
+
+======================================================================
+
+ERROR [0.000s]: patients.tests (unittest.loader._FailedTest)
+
+----------------------------------------------------------------------
+
+ImportError: Failed to import test module: patients.tests
+
+Traceback (most recent call last):
+
+  File "/usr/lib/python3.5/unittest/loader.py", line 428, in _find_test_path
+
+    module = self._get_module_from_name(name)
+
+  File "/usr/lib/python3.5/unittest/loader.py", line 369, in _get_module_from_name
+
+    __import__(name)
+
+  File "/projects/challenge/patients/tests.py", line 3, in <module>
+
+    from .views import RegisterCreateView, EditUserView
+
+ImportError: cannot import name 'RegisterCreateView'
+
+======================================================================
+
+FAIL [0.003s]: test_editUser (register.tests.RegisterView)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "/projects/challenge/register/tests.py", line 63, in test_editUser
+
+    self.assertEqual(response.status_code, 200)
+
+AssertionError: 405 != 200
+
+======================================================================
+
+FAIL [0.003s]: test_signinUser (register.tests.RegisterView)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "/projects/challenge/register/tests.py", line 37, in test_signinUser
+
+    self.assertEqual(response.status_code, 200)
+
+AssertionError: 403 != 200
+
+======================================================================
+
+FAIL [0.012s]: test_viewProfile (register.tests.RegisterView)
+
+----------------------------------------------------------------------
+
+Traceback (most recent call last):
+
+  File "/projects/challenge/register/tests.py", line 52, in test_viewProfile
+
+    'user_mobile': '9874563210',
+
+  File "/home/user/.local/lib/python3.5/site-packages/django/test/testcases.py", line 817, in assertJSONEqual
+
+    self.assertEqual(data, expected_data, msg=msg)
+
+AssertionError: {'response': {'user_mobile': '9874563210', [258 chars]lse}} != {'user_email': 'email3@test.com', 'user_nam[116 chars]on3'}
+
+Diff is 847 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+
+Ran 6 tests in 0.063s
+
+FAILED (failures=3, errors=3)
+
+Generating XML reports...
+
+Preserving test database for alias 'default'...
+
+System check identified no issues (0 silenced).

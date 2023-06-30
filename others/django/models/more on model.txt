@@ -1,0 +1,128 @@
+class Category(models.Model):
+    cat_name = models.TextField(max_length=100)
+    TYPES = (('D', 'Digital'),('N', 'Non-Digital'),)
+    cat_type = models.TextField(max_length=1, choices=TYPES)
+    STATUS = (('A','Active'),('I','Inactive'),)
+    cat_status = models.TextField(max_length=1, choices=STATUS)
+
+    def __str__(self):
+        return self.cat_name
+
+class Course(models.Model):
+    category = models.ForeignKey(Category,
+    crs_name = models.TextField(max_length=100)
+    STATUS = (('A','Active'),('I','Inactive'),)
+    crs_status = models.TextField(max_length=1, choices=STATUS)
+    crs_description = models.TextField(max_length=500)
+    crs_duration = models.IntegerField()
+    crs_miles = models.IntegerField()
+
+    def __str__(self):
+        return self.crs_name
+
+class Associate(models.Model):
+    course = models.ManyToManyField(Course)
+    name = models.TextField(max_length=100)
+    email = models.EmailField(default=None)
+    miles_earned = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.name
+
+class Manager(models.Model):
+    associate = models.OneToOneField(Associate,on_delete=models.CASCADE,primary_key=True,)
+    is_scrum_master = models.BooleanField(default=False)
+    associate_count = models.IntegerField()
+
+    def __str__(self):
+        return self.associate.name
+
+
+
+
+shell:
+
+from play.models import Course, Category, Associate, Manager
+cat=Category(cat_name='Modern Web Development',cat_type='D',cat_status='A')
+cat.save()
+
+
+react=Course(category=cat,crs_name='ReactJS',crs_status = 'A',crs_description="Course on React JS",crs_duration=100,crs_miles=100)
+angular=Course(category=cat,crs_name='AngularJS',crs_status = 'A',crs_description="Course on Angular JS",crs_duration=100,crs_miles=120)
+backbone=Course(category=cat,crs_name='BackboneJS',crs_status = 'A',crs_description="Course on Backbone JS",crs_duration=90,crs_miles=100)
+angular.save()
+react.save()
+backbone.save()
+
+
+chester=Associate(name='Chester Benington',email="chester.benington@tcs.com",miles_earned=200)
+mike=Associate(name='Mike Shinoda',email="mike.shinoda@tcs.com",miles_earned=220)
+joe=Associate(name='Joe Hahn',email="joe.hahn@tcs.com",miles_earned=220)
+rob=Associate(name='rob Bourdon',email="rob.bourdon@tcs.com",miles_earned=320)
+chester.save()
+mike.save()
+joe.save()
+rob.save()
+
+
+chester.course.add(react,backbone)
+mike.course.add(angular,react)
+joe.course.add(angular,backbone)
+rob.course.add(react,angular, backbone)
+
+mgr1=Manager(associate=rob,is_scrum_master=True,associate_count=3)
+mgr1.save()
+
+
+for crs in Course.objects.raw('select * from play_course'):
+   print(crs)
+
+
+for crs in Course.objects.raw('select * from play_course where category_id=1'):
+   print(crs)
+
+
+miles=220
+
+
+assc=Associate.objects.raw('select * from play_associate where miles_earned=%s',[miles])
+
+for assoc in assc:
+   print(assoc.course.all())
+
+
+
+from django.db import connection
+
+miles=220
+name='rob Bourdon'
+
+
+def my_query():
+    with connection.cursor() as mycursor:
+        mycursor.execute("update play_associate set miles_earned=%s where name=%s",[miles, name])
+        mycursor.execute("select * from play_associate where miles_earned=%s",[miles])
+        row = mycursor.fetchall()
+    return row
+
+my_query()
+
+
+Associate.objects.count()
+
+
+Associate.objects.filter(miles_earned=220).count()
+
+from django.db.models import Avg, Max, Min
+
+
+Associate.objects.all().aggregate(Avg('miles_earned'),Max('miles_earned'),Min('miles_earned'))
+
+from django.db.models import Count,Q
+
+
+assoc=Associate.objects.annotate(course_count=Count('course'))
+
+
+assoc[0].course_count
+assoc[3].course_count

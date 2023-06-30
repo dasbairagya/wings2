@@ -1,0 +1,12 @@
+python -m pip install Django
+
+python -m django --version
+pip install django-binary-database-files
+
+pip install django-admin
+
+django-admin version	
+django-admin startproject mysite
+
+
+https://www.youtube.com/watch?v=xjMP0hspNLE -> jwt + drf+react login/register

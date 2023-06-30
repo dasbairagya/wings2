@@ -1,0 +1,7 @@
+from django.db import models
+
+# Create your model to register the patient, class name = Register.
+    
+
+
+# fields = ("user_name", "user_email", "password","user_dob","location", "user_mobile")

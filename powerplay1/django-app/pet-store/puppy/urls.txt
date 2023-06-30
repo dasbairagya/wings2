@@ -1,0 +1,18 @@
+from django.contrib import admin
+from .views import AddpuppyView, ListpuppyView, DeletepuppyView, SinglepuppyView, EditpuppyView, BookPuppyView, ListBookedpuppyView, SingleBookedpuppyView, DeleteBookedpuppyView
+from django.urls import path, include
+
+
+
+urlpatterns = [
+	path('addpuppy/', AddpuppyView.as_view(), name = "Add-puppy"),
+	path('listpuppy/', ListpuppyView.as_view(), name = "List-puppy"),
+	path('deletepuppy/<int:pk>', DeletepuppyView.as_view(), name = "Delete-puppy"),
+	path('viewpuppy/<int:pk>', SinglepuppyView.as_view(), name = "View-puppy"),
+	path('editpuppy/<int:pk>', EditpuppyView.as_view(), name = "Edit-puppy"),
+	path('bookpuppy/', BookPuppyView.as_view(), name = "Book-puppy"),
+	path('bookedpuppy/', ListBookedpuppyView.as_view(), name = "BookedList-puppy"),
+	path('Singlebookedpuppy/<int:pk>', SingleBookedpuppyView.as_view(), name = "SingleBooked-puppy"),
+	path('deletebookedpuppy/<int:pk>', DeleteBookedpuppyView.as_view(), name = "DeleteBooked-puppy"),
+	
+	]

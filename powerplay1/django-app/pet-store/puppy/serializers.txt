@@ -1,0 +1,14 @@
+from rest_framework import serializers
+from .models import Addpuppy, Bookpuppy
+
+
+class PuppyaddSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = Addpuppy
+		fields = ("Color", "Breed", "Age","Gender","Price")
+
+class BookPuppySerializer(serializers.ModelSerializer):
+	class Meta:
+		model = Bookpuppy
+		fields = ("Puppy", "No_of_puppies", "Address")
+

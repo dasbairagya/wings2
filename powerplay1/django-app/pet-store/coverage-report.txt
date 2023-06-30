@@ -1,0 +1,111 @@
+Coverage.py warning: Module room was never imported. (module-not-imported)
+Name                              Stmts   Miss  Cover
+-----------------------------------------------------
+user/__init__.py                      0      0   100%
+user/admin.py                        10     10     0%
+user/migrations/0001_initial.py       5      0   100%
+user/migrations/__init__.py           0      0   100%
+user/models.py                       24     19    21%
+user/serializers.py                  29     14    52%
+user/urls.py                          4      0   100%
+user/views.py                        15      1    93%
+-----------------------------------------------------
+TOTAL                                87     44    49%
+----------------------------------------------------------------------
+Ran 6 tests in 0.282s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------
+No changes detected
+
+Operations to perform:
+
+  Synchronize unmigrated apps: django_nose, messages, rest_framework, staticfiles
+
+  Apply all migrations: admin, auth, authtoken, contenttypes, puppy, sessions, user
+
+Synchronizing apps without migrations:
+
+  Creating tables...
+
+    Running deferred SQL...
+
+Running migrations:
+
+  No migrations to apply.
+
+Using existing test database for alias 'default'...
+
+......
+
+Coverage.py warning: Module room was never imported. (module-not-imported)
+
+Name                              Stmts   Miss  Cover
+
+-----------------------------------------------------
+
+user/__init__.py                      0      0   100%
+
+user/admin.py                        10     10     0%
+
+user/migrations/0001_initial.py       5      0   100%
+
+user/migrations/__init__.py           0      0   100%
+
+user/models.py                       24     19    21%
+
+user/serializers.py                  29     14    52%
+
+user/urls.py                          4      0   100%
+
+user/views.py                        15      1    93%
+
+-----------------------------------------------------
+
+TOTAL                                87     44    49%
+
+----------------------------------------------------------------------
+
+Ran 6 tests in 0.271s
+
+OK
+
+Preserving test database for alias 'default'...
+
+nosetests --with-coverage --cover-package=room,user --cover-xml --verbosity=1
+
+FS_SCORE:49%
+
+
+
+
+
+-----------------------------------------------
+
+
+
+admin/
+create/ [name='create']
+token/ [name='token']
+profile/ [name='profile']
+addpuppy/ [name='Add-puppy']
+listpuppy/ [name='List-puppy']
+deletepuppy/<int:pk> [name='Delete-puppy']
+viewpuppy/<int:pk> [name='View-puppy']
+editpuppy/<int:pk> [name='Edit-puppy']
+bookpuppy/ [name='Book-puppy']
+bookedpuppy/ [name='BookedList-puppy']
+Singlebookedpuppy/<int:pk> [name='SingleBooked-puppy']
+deletebookedpuppy/<int:pk> [name='DeleteBooked-puppy']

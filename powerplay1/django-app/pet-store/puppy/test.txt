@@ -1,0 +1,37 @@
+from django.test import TestCase, Client
+from .models import Addpuppy,Bookpuppy
+
+# Create your tests here.
+class PuppyTest(TestCase):
+
+  """ Test module for Puppy model """
+
+  def setUp(self):
+    Addpuppy.objects.create(Name='Casper', Age=3, Breed='Bull Dog', Color='Black', Gender='F', Price='100')
+    self.client = Client()
+
+  def test_addpuppy(self):
+    response = self.client.post('/addpuppy/',
+                                {'Name': 'Casper', 'Age': 3, 'Breed': 'Bull Dog',
+                                  'Cplor': 'Black', 'Gender': 'Female',
+                                  'Price': 100})
+                                              
+    self.assertEqual(response.status_code, 201)
+
+  def test_listpuppy(self):
+    response = self.client.get('/listpuppy/')
+    self.assertEqual(response.status_code, 200)
+
+  def test_viewpuppy(self):
+    response = self.client.get('/viewpuppy/1')
+    response_content = response.content.decode("utf-8")
+    self.assertEqual(response.status_code, 200)
+
+  def test_editpuppy(self):
+      response = self.client.get('/editpuppy/1')
+      self.assertEqual(response.status_code, 200)
+
+  def test_deletepuppy(self):
+    response = self.client.delete('/deletepuppy/1')
+    response_content = response.content.decode("utf-8")
+    self.assertEqual(response.status_code, 204)

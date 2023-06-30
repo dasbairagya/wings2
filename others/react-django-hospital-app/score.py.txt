@@ -1,0 +1,134 @@
+import time, sqlite3, os, shutil
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options 
+
+SCORE = 0
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+driver = webdriver.Chrome('./chromedriver', chrome_options = chrome_options)
+driver.get('http://localhost:3000/')
+
+conn = sqlite3.connect('Django-BackEnd/db.sqlite3')
+cursorObj = conn.cursor()
+cursorObj.execute('DELETE FROM register_registeruser')
+cursorObj.execute('DELETE FROM patients_register')
+cursorObj.execute('DELETE FROM appointments_bookappointments')
+conn.commit()
+cursorObj.close()
+conn.close()
+
+cache_paths = ['register/__pycache__', 'appointments/__pycache__', 'fshospital/__pycache__', 'patients/__pycache__']
+for path in cache_paths:
+	if os.path.exists('Django-BackEnd/'+path) and os.path.isdir('Django-BackEnd/'+path):
+		shutil.rmtree('Django-BackEnd/'+path)
+
+driver.find_element_by_id('uname').send_keys('User1')
+driver.find_element_by_id('email').send_keys('user1@gmail.com')
+driver.find_element_by_id('password').send_keys('pass@123')
+driver.find_element_by_id('dob').send_keys('10/10/2018')
+driver.find_element_by_id('mobileno').send_keys('9113123123')
+driver.find_element_by_id('location').send_keys('sweden')
+driver.find_element_by_id('registerbtn').submit()
+time.sleep(0.5)
+driver.switch_to_alert().accept()	
+time.sleep(0.5)
+driver.find_element_by_id('email').send_keys('user1@gmail.com')
+driver.find_element_by_id('password').send_keys('pass@123')
+driver.find_element_by_id('loginbtn').click()
+time.sleep(0.5)
+driver.switch_to_alert().accept()
+
+
+
+driver.get('http://localhost:3000/#/hospital/addPatient/')
+time.sleep(1)
+driver.find_element_by_id('name').send_keys('Patient1')
+driver.find_element_by_id('email').send_keys('patient1@gmail.com')
+driver.find_element_by_id('dob').send_keys('10/10/2018')
+driver.find_element_by_id('location').send_keys('sweden')
+driver.find_element_by_id('mobile').send_keys('9113123123')
+driver.find_element_by_id('registerbtn').click()
+time.sleep(0.5)
+driver.switch_to_alert().accept()
+
+driver.get('http://localhost:3000/#/hospital/allPatients')
+time.sleep(1)
+if len(driver.find_elements_by_xpath("//span[contains(text(), 'Patient1')]")) > 0:
+	SCORE += 20
+
+
+
+driver.get('http://localhost:3000/#/hospital/bookAppointment/')
+time.sleep(1)
+driver.find_element_by_xpath("//select[@id='dropdown']/option[text()='Patient1']").click()
+driver.find_element_by_id('disease').send_keys('fever')
+driver.find_element_by_id('date').send_keys('10/10/2018')
+driver.find_element_by_xpath("//select[@id='dropdown']/option[text()='1-2 PM']").click()
+driver.find_element_by_id('description').send_keys('fever from 2 days')
+driver.find_element_by_id('bookbtn').click()
+time.sleep(0.5)
+driver.switch_to_alert().accept()
+
+
+driver.get('http://localhost:3000/#/hospital/allAppointments')
+time.sleep(1)
+if len(driver.find_elements_by_xpath("//span[contains(text(), 'fever')]")) > 0:
+	SCORE += 20
+
+
+
+conn = sqlite3.connect('Django-BackEnd/db.sqlite3')
+cursorObj = conn.cursor()
+cursorObj.execute('SELECT * FROM register_registeruser')
+user_data = cursorObj.fetchall()[0]
+if 'User1' in user_data:
+	SCORE += 3
+
+if 'user1@gmail.com' in user_data:
+	SCORE += 3
+
+if 'pass@123' in user_data:
+	SCORE += 3
+
+if '2018-10-10' in user_data:
+	SCORE += 3
+
+if '9113123123' in user_data:
+	SCORE += 3
+
+if 'sweden' in user_data:
+	SCORE += 5
+
+cursorObj.execute('SELECT * FROM patients_register')
+patient_data = cursorObj.fetchall()[0]
+if 'Patient1' in patient_data:
+	SCORE += 4
+
+if 'patient1@gmail.com' in patient_data:
+	SCORE += 4
+
+if '2018-10-10' in patient_data:
+	SCORE += 4
+
+if '9113123123' in patient_data:
+	SCORE += 4
+
+if 'sweden' in patient_data:
+	SCORE += 4
+
+cursorObj.execute('SELECT * FROM appointments_bookappointments')
+appointment_data = cursorObj.fetchall()[0]
+if 'fever' in appointment_data:
+	SCORE += 5
+
+if '2018-10-10' in appointment_data:
+	SCORE += 5
+
+if '1-2 PM' in appointment_data:
+	SCORE += 5
+
+if 'fever from 2 days' in appointment_data:
+	SCORE += 5
+
+print('FS_SCORE:' + str(SCORE) + '%')

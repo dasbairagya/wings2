@@ -1,0 +1,5 @@
+from django.db import models
+
+# Create a model for booking appointments, class name = BookAppointments
+
+# fields = ("patients", "disease", "date","timings", "description")

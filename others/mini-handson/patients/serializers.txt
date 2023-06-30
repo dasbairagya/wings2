@@ -1,0 +1,7 @@
+from rest_framework import serializers
+
+#Write the serializer for Registering the appointment
+
+
+# fields = ("user_name", "user_email", "password","user_dob","location", "user_mobile", 'bookappointments')
+

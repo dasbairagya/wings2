@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+
+  File ".score.py", line 34, in <module>
+
+    driver.switch_to_alert().accept()	
+
+  File "/home/user/.local/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 803, in switch_to_alert
+
+    return self._switch_to.alert
+
+  File "/home/user/.local/lib/python3.5/site-packages/selenium/webdriver/remote/switch_to.py", line 55, in alert
+
+    alert.text
+
+  File "/home/user/.local/lib/python3.5/site-packages/selenium/webdriver/common/alert.py", line 67, in text
+
+    return self.driver.execute(Command.W3C_GET_ALERT_TEXT)["value"]
+
+  File "/home/user/.local/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+
+    self.error_handler.check_response(response)
+
+  File "/home/user/.local/lib/python3.5/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+
+    raise exception_class(message, screen, stacktrace)
+
+selenium.common.exceptions.NoAlertPresentException: Message: no such alert
+
+  (Session info: headless chrome=78.0.3904.108)

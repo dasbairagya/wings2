@@ -1,0 +1,6 @@
+from rest_framework import serializers
+
+
+    
+
+# fields = ("patients", "disease", "date","timings", "description")

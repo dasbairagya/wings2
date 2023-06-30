@@ -1,0 +1,61 @@
+from django.test import TestCase, Client
+from .models import User
+
+# Create your tests here.
+class TestModel(TestCase):
+  
+
+  def test_create_user(self):
+    user = User.objects.create_user(name='username1',email='email1@test.com',password='password1')
+    self.assertIsInstance(user, User)
+    self.assertEqual(user.email, 'email1@test.com')
+    self.assertFalse(user.is_staff)
+
+  def test_create_superuser(self):
+    user = User.objects.create_superuser(email='email1@test.com',password='password1')
+    self.assertIsInstance(user, User)
+    self.assertEqual(user.email, 'email1@test.com')
+    self.assertTrue(user.is_staff)
+
+  def test_raise_error_for_invalid_email(self):
+    self.assertRaises(ValueError, User.objects.create_user, email='', name='username3',password='password1')
+    self.assertRaisesMessage(ValueError, 'user must have email address')
+
+  def test_raise_error_message_for_invalid_email(self):
+    with self.assertRaisesMessage(ValueError, 'user must have email address'):
+      User.objects.create_user(name='username1', email='', password='password1')
+
+
+class TestManageUserView(TestCase):
+  def setUp(self):
+    self.client = Client()
+    self.client.post('/create/', {'name': 'username3', 'email': 'email3@test.com', 'password': 'password3'})
+
+  def authenticate(self, email='', password=''):
+    response = self.client.post('/token/', {'email': email, 'password': password})
+
+    if response.status_code == 200:
+      headers = {"HTTP_AUTHORIZATION": "Token {}".format(response.data['token'])}
+      return headers
+
+    return False
+
+  def test_get_object(self):
+    headers = self.authenticate(email='email3@test.com', password='password3')
+    # print(headers)
+
+    response = self.client.get('/profile/', **headers)
+    # response_content = response.content.decode("utf-8")
+    # print(response_content)
+    self.assertEqual(response.status_code, 200)
+    self.assertEqual(response.data['email'], 'email3@test.com')
+
+    response1 = self.client.patch('/profile/', {'password': 'password'}, content_type='application/json', **headers)
+    # response_content = response1.content.decode("utf-8")
+    # print(response_content)
+
+    self.assertEqual(response1.status_code, 200)
+    self.assertEqual(response1.data['email'], 'email3@test.com')
+
+    if self.authenticate(email='email3@test.com', password='password31') is False:
+      self.assertRaisesMessage(ValueError, 'Unable to authenticate with provided credentials')

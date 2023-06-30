@@ -1,0 +1,38 @@
+from django.shortcuts import render
+from rest_framework import generics
+from rest_framework.response import Response
+from .serializers import RegisterSerializer, SigninSerializer
+from rest_framework.authtoken.models import Token
+import jwt
+import datetime
+from django.conf import settings
+from django.core import serializers
+from rest_framework import status
+from .models import RegisterUser
+
+
+#Method to register a new user 
+class RegisterCreateView(generics.CreateAPIView):
+    serializer_class = RegisterSerializer
+
+    def create(self, request, *args, **kwargs):
+    	return Response(data={"message": "Password or username policy failed."}, status=status.HTTP_400_BAD_REQUEST)
+
+    @staticmethod
+    def check_details(data):
+    	return len(data['user_name']) < 11 and len(data['password']) < 10
+
+#Method to check login credentials
+class SigninRetrieveView(generics.CreateAPIView):
+	serializer_class = SigninSerializer	
+	
+	def create(self, request, *args, **kwargs):
+
+
+#Method to list a particular user 
+class SingleUserView(generics.RetrieveAPIView):
+
+#Method to edit details of a particular user
+class EditUserView(generics.RetrieveUpdateAPIView):
+        
+       

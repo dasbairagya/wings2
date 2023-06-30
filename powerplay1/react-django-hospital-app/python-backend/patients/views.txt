@@ -1,0 +1,27 @@
+from django.shortcuts import render
+from rest_framework import generics, status
+from rest_framework.response import Response
+from .serializers import RegisterSerializer, ViewSerializer
+from django.core import serializers
+from .models import Register
+
+#Method to register a new user
+class RegisterCreateView(generics.CreateAPIView):
+    serializer_class = RegisterSerializer
+
+    def create(self, request, *args, **kwargs):
+
+    @staticmethod
+    def check_details(data):
+        return len(data['user_name']) < 11
+
+#Method to edit patient details
+class EditUserView(generics.RetrieveUpdateAPIView):
+
+#Method to list all the patients
+class ListUserView(generics.ListAPIView):
+
+class SingleUserView(generics.RetrieveAPIView):
+
+class DeleteUserView(generics.DestroyAPIView):
+

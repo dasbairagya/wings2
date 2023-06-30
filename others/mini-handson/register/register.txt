@@ -1,0 +1,226 @@
+model:
+from django.db import models
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
+
+class UserManager(BaseUserManager):
+    def get_by_natural_key(self, user_email):
+        return self.get(user_email=user_email)
+
+    use_in_migrations = True
+
+    def create_user(self, user_email, password, **extra_fields):
+
+        if not user_email:
+            raise ValueError('The Email must be set')
+        user_email = self.normalize_email(user_email)
+        user = self.model(user_email=user_email, **extra_fields)
+        user.set_password(password)
+        user.save(using=self._db)
+        return user
+
+    def create_superuser(self, user_email, password, **extra_fields):
+
+        # print(f"{user_email=} {password=} {extra_fields=}")
+        extra_fields.setdefault('is_superuser', True)
+        extra_fields.setdefault('is_staff', True)
+        extra_fields.setdefault('is_active', True)
+        if extra_fields.get('is_superuser') is not True:
+            raise ValueError('Superuser must have is_superuser=True.')
+        return self.create_user(user_email, password, **extra_fields)
+
+# Create a model for Registering the user, class name = RegisterUser
+class RegisterUser(AbstractBaseUser, PermissionsMixin):
+
+    def natural_key(self):
+        return self.user_email,
+
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    user_name = models.CharField(max_length=150)
+    user_email = models.EmailField(max_length=255, unique=True)
+    user_dob = models.DateTimeField(default=timezone.now)
+    location = models.CharField(max_length=50)
+    user_mobile = models.CharField(max_length=50)
+    is_staff = models.BooleanField(default=False)
+    is_active = models.BooleanField(default=True)
+    objects = UserManager()
+
+    USERNAME_FIELD = 'user_email'
+
+    # REQUIRED_FIELDS = ['user_name', 'user_password']
+
+    def __str__(self):
+        return self.user_email
+
+# fields = "user_name", "user_email", "password","user_dob","location", "user_mobile"
+
+
+
+
+view:
+
+
+from django.shortcuts import render
+from rest_framework import generics, status
+from rest_framework.response import Response
+from django.core import serializers
+from rest_framework import APIView
+from django.contrib.auth import login, authenticate
+from rest_framework.permissions import AllowAny
+from .models import RegisterUser
+from .serializers import ProfileSerializer, RegisterUserSerializer, LoginSerializers
+
+#Method to register a new user 
+class RegisterCreateView(APIView):
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        serializer = RegisterUserSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def get(self, request):
+        users = RegisterUser.objects.all()
+        serializer = RegisterUserSerializer(users, many=True)
+        return Response(serializer.data)
+    
+
+
+
+#Method to check login credentials
+class LoginView(APIView):
+    def post(self, request, *args, **kwargs):
+        serializer = LoginSerializers(data=request.data, context={'request': request})
+        serializer.is_valid(raise_exception=True)
+        user = serializer.validated_data['user']
+        update_last_login(None, user)
+        token, created = Token.objects.get_or_create(user=user)
+        return Response({"status": status.HTTP_200_OK, "Token": token.key})
+
+
+
+#Method to list a particular user 
+class SingleUserView(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request):
+        user = request.data
+        profile = RegisterUser.objects.filter(user_email=user['user_email']).get()
+        profileSerializer = ProfileSerializer(profile)
+        return Response({
+            'profile_data':profileSerializer.data,
+        }, status=status.HTTP_200_OK)
+
+
+
+#Method to edit details of a particular user
+
+class EditProfileView(APIView):
+    """"API endpoint for Patient profile update"""
+
+    permission_classes = [AllowAny]
+
+    def put(self, request, format=None):
+        user = request.data
+        profile = RegisterUser.objects.filter(user_email=user['user_email']).get()
+        profileSerializer = ProfileSerializer(
+            instance=profile, data=request.data.get('profile_data'), partial=True)
+        if profileSerializer.is_valid():
+            profileSerializer.save()
+            return Response({
+                'profile_data': profileSerializer.data
+            }, status=status.HTTP_200_OK)
+        return Response({
+            'profile_data': profileSerializer.errors
+        }, status=status.HTTP_400_BAD_REQUEST)
+
+
+
+
+serializer:
+
+from rest_framework import serializers
+from .models import RegisterUser
+
+#Write the serializer for Registering the user
+class RegisterUserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = RegisterUser
+        fields = '__all__'
+
+    def create(self, validated_data):
+        user = RegisterUser.objects.create_user(**validated_data)
+        return user
+
+# fields = ("user_name", "user_email", "password","user_dob","location", "user_mobile")
+
+
+
+#Write the serializer for Signin
+
+class LoginSerializers(serializers.Serializer):
+    user_email = serializers.CharField(max_length=255)
+    password = serializers.CharField(
+        trim_whitespace=False,
+        max_length=128,
+        write_only=True
+    )
+
+    def validate(self, data):
+        user_email = data.get('email')
+        password = data.get('password')
+
+        if user_email and password:
+            user = authenticate(request=self.context.get('request'),
+                                user_email=user_email, password=password)
+            if not user:
+                msg = 'Unable to log in with provided credentials.'
+                raise serializers.ValidationError(msg, code='authorization')
+        else:
+            msg = 'Must include "username" and "password".'
+            raise serializers.ValidationError(msg, code='authorization')
+
+        data['user'] = user
+        return data
+
+# fields = ("user_email", "password")
+
+
+class ProfileSerializer(serializers.Serializer):
+
+    user_dob = serializers.DateTimeField()
+    location = serializers.CharField(max_length=50)
+    user_mobile = serializers.CharField(max_length=50)
+
+    def validate_mobile(self, user_mobile):
+        if user_mobile.isdigit() == False:
+            raise serializers.ValidationError('Please Enter a valid mobile number!')
+        return user_mobile
+
+    def create(self, validated_data):
+        new_patient = RegisterUser.objects.create(
+            user_dob=validated_data['user_dob'],
+            location=validated_data['location'],
+            user_mobile=validated_data['user_mobile'],
+            user=validated_data['user']
+        )
+        return new_patient
+
+    def update(self, instance, validated_data):
+        instance.user_dob = validated_data.get('user_dob', instance.user_dob)
+        instance.location = validated_data.get('location', instance.location)
+        instance.user_mobile = validated_data.get('user_mobile', instance.user_mobile)
+        instance.save()
+        return instance
+
+
+urls:
+
+urlpatterns = [
+    path('signin/', LoginView.as_view(), name='signin'),
+    path('register/', RegisterCreateView.as_view(), name='register'),
+    path('editprofile/<int:pk>', EditProfileView.as_view(), name='editprofile'),
+    path('viewprofile/<int:pk>', SingleUserView.as_view(), name='viewprofile'),
+
+    ]

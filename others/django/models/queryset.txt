@@ -1,0 +1,128 @@
+class Category(models.Model):
+    cat_name = models.TextField(max_length=100)
+    TYPES = (('D', 'Digital'),('N', 'Non-Digital'),)
+    cat_type = models.TextField(max_length=1, choices=TYPES)
+    STATUS = (('A','Active'),('I','Inactive'),)
+    cat_status = models.TextField(max_length=1, choices=STATUS)
+    
+    def __str__(self):
+        return self.cat_name
+
+class Course(models.Model):
+    category = models.ForeignKey(Category,on_delete=models.CASCADE)
+    crs_name = models.TextField(max_length=100)
+    STATUS = (('A','Active'),('I','Inactive'),)
+    crs_status = models.TextField(max_length=1, choices=STATUS)
+    crs_description = models.TextField(max_length=500)
+    crs_duration = models.IntegerField()
+    crs_miles = models.IntegerField()
+    
+    def __str__(self):
+        return self.crs_name
+
+
+
+from play.models import Category, Course
+cat=Category(cat_name='Modern Web Development',cat_type='D',cat_status='A')
+cat.save()
+cat1=Category.objects.create(cat_name='Microservices',cat_type='D', cat_status='A')
+cat1.save()
+
+
+react=Course(category=cat,crs_name='ReactJS',crs_status = 'A',crs_description="Course on React JS",crs_duration=100,crs_miles=100)
+angular=Course(category=cat,crs_name='AngularJS',crs_status = 'A',crs_description="Course on Angular JS",crs_duration=100,crs_miles=120)
+backbone=Course(category=cat,crs_name='BackboneJS',crs_status = 'A',crs_description="Course on Backbone JS",crs_duration=90,crs_miles=100)
+angular.save()
+react.save()
+backbone.save()
+
+
+
+cat1=Category.objects.get(cat_name="Microservices") 
+crs1=Course.objects.get(pk=1)
+
+
+
+crs1.id,crs1.category_id,crs1.crs_name,crs1.category
+
+
+crs1.category=cat1
+
+
+crs1.save()
+crs1.id,crs1.category_id,crs1.crs_name,crs1.category
+Course.objects.values()
+
+
+Course.objects.filter(category_id=2)
+
+
+
+Course.objects.exclude(category_id=2).values()
+
+
+
+Course.objects.exclude(category_id=2).filter(crs_name="ReactJS")
+
+
+
+Course.objects.exclude(category_id=2).filter(crs_name="ReactJS").values()
+
+
+Course.objects.filter(crs_name__contains="act")
+
+
+Course.objects.filter(crs_name__iexact="reactjs")
+
+
+Course.objects.filter(crs_miles__gt=100)
+
+Course.objects.filter(crs_miles__lte=100)
+
+
+Course.objects.filter(crs_miles__lte=100).filter(crs_duration__lt=100)
+
+
+Course.objects.filter(category__cat_name="Microservices")
+
+
+Category.objects.filter(course__crs_name='ReactJS')
+
+
+
+celery=Course(category=cat1,crs_name='Celery',crs_status = 'A',crs_description="Course on Celery task queue",crs_duration=120,crs_miles=200)
+django=Course(category=cat,crs_name='Django ORM',crs_status = 'I',crs_description="Course on django ORM",crs_duration=150,crs_miles=300)
+celery.save()
+django.save()
+
+
+
+from django.db.models import F
+
+angular=Course.objects.get(pk=1)
+
+angular.crs_miles
+
+
+angular.crs_miles=F('crs_miles')+30
+angular.save()
+
+angular.crs_miles
+Course.objects.get(pk=1).crs_miles
+
+
+from django.db.models import Q
+
+
+Course.objects.filter(Q(crs_miles__gt=150))
+
+
+Course.objects.filter(Q(crs_miles__gt=150)|Q(crs_name__contains="act"))
+
+
+Course.objects.filter(Q(crs_miles__gt=150)|Q(crs_name__contains="act"),Q(crs_duration=150))
+
+
+Course.objects.filter(pk=5).delete()
+
+Course.objects.all()

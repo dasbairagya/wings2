@@ -1,0 +1,121 @@
+import React, { useState } from "react";
+import Medilogo from "../images/Medi-Logo.png";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+} from "reactstrap";
+import { Link } from "react-router-dom";
+import { NavLink as ReactLink } from "react-router-dom";
+
+const Example = props => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (                                                                                                                                                       
+    <div>
+      <Navbar style={{ backgroundColor: "#D3D3D3" }} light expand="md">
+        <img src={Medilogo} style={{ width: 100, marginTop: -7 }} />
+        <NavbarBrand href="/#/hospital/allPatients/">DMRD</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar style={{ fontSize: "18px" }}>
+          <Nav className="ml-auto" navbar>
+            {/*<NavItem>
+              <NavLink
+                tag={ReactLink}
+                to="/addPatient"
+                activeClassName="active"
+              >
+                Add Patient
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                tag={ReactLink}
+                to="/allPatients"
+                activeClassName="active"
+              >
+                All Patients
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                tag={ReactLink}
+                to="/bookAppointment"
+                activeClassName="active"
+              >
+                Book Appointment
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                tag={ReactLink}
+                to="/allAppointments"
+                activeClassName="active"
+              >
+                All Appointments
+              </NavLink>
+            </NavItem> */}
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Patient
+              </DropdownToggle>
+              <DropdownMenu right >
+                <DropdownItem style={{backgroundColor:"White"}}>
+                  <Link style={{textDecoration:"none"}} to="/addPatient/">Add patient</Link>
+                </DropdownItem>
+                <DropdownItem style={{backgroundColor:"White"}}>
+                  <Link style={{textDecoration:"none"}} to="/allPatients/">All Patients</Link>
+                </DropdownItem>
+                {/*<DropdownItem divider />*/}
+
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Appointments
+              </DropdownToggle>
+              <DropdownMenu right >
+                <DropdownItem style={{backgroundColor:"White"}}>
+                  <Link style={{textDecoration:"none"}} to="/bookAppointment/">Book Appointment</Link>
+                </DropdownItem>
+                <DropdownItem style={{backgroundColor:"White"}}>
+                  <Link style={{textDecoration:"none"}} to="/allAppointments/">All Appointments</Link>
+                </DropdownItem>
+                {/*<DropdownItem divider />*/}
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                User
+              </DropdownToggle>
+              <DropdownMenu right >
+                <DropdownItem style={{backgroundColor:"White"}}>
+                  <Link style={{textDecoration:"none"}} to="/viewProfile/">View Profile</Link>
+                </DropdownItem>
+                <DropdownItem style={{backgroundColor:"White"}}>
+                  <Link style={{textDecoration:"none"}} to="/editProfile/">Edit Profile</Link>
+                </DropdownItem>
+                {/*<DropdownItem divider />*/}
+                <DropdownItem style={{backgroundColor:"White"}}>
+                  <Link style={{textDecoration:"none"}} to="/sign-in/">Logout</Link>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+        </Collapse>
+      </Navbar>
+    </div>
+  );
+};
+export default Example;
+
